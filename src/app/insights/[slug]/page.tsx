@@ -59,8 +59,10 @@ export default async function InsightDetailPage({ params }: PageProps) {
               {post.excerpt}
             </p>
             {post.content ? (
-              <div className="mt-8 text-foreground leading-relaxed">
-                {post.content}
+              <div className="mt-8 text-foreground leading-relaxed space-y-4">
+                {post.content.split(/\n\n+/).map((paragraph, i) => (
+                  <p key={i}>{paragraph.trim()}</p>
+                ))}
               </div>
             ) : (
               <p className="mt-8 text-[var(--muted)] italic">
