@@ -39,7 +39,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Retainer and project-based engagements",
     ],
     stage: "Active",
-    pressSlugs: ["ironvael-advisory-launch"],
+    pressSlugs: ["ironvael-advisory-virtual-business-webinar", "ironvael-advisory-launch"],
   },
   {
     slug: "operations-university",
